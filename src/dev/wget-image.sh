@@ -1,0 +1,1 @@
+wget -O random_image.$(curl -s https://source.unsplash.com/random | grep -oP 'jpg|png|gif' | head -1) $(curl -s https://source.unsplash.com/random | grep -oP 'https://images.unsplash.com/photo-\d+.*jpg')
